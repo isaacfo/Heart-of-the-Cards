@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* optimizeLegibility
+The browser emphasizes legibility over rendering speed and geometric precision. This enables kerning and optional ligatures. */
+html {
+     background-color: #fff;
+     color: #555;
+     font-family: 'Lato', sans-serif;
+     font-size: 20px;
+     font-weight: 300;
+     text-rendering: optimizeLegibility;
+}
+
+/* margin short hand makes left and right auto automatically by defining only top and bottom */
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
