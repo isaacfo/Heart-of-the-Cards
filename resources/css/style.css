@@ -218,8 +218,22 @@ header {
 }
 
 /* ---------------------------------------------- */
+/* FEATURES*/
+/* ----------------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 30px;
+}
+
+
+/* ---------------------------------------------- */
 /* MEALS*/
 /* ----------------------------------------------- */
+
+/* reduced spaces between images and mini paragraphs with logo */
+.section-meals {
+    padding: 0;
+}
 
 .meals-showcase {
     list-style: none;
@@ -232,12 +246,26 @@ header {
     width: 25%;
 }
 /* normalize gives it tiny margin, so we overide it with 0 */
+/* overflow hidden will hide part of image that goes over border of browser */
 .meal-photo {
     width: 100%;
     margin: 0;
+    overflow: hidden;
+    background-color: #000;
 }
 /* making img wide as container which is .meal-photo above */
+/* transform scale will make the image bigger, will be at 115% */
+/* transition give it an animation */
+/* combining opacity and background-color black will give it dark look */
 .meal-photo img {
+    opacity: 0.7;
     width: 100%;
     height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+/* 1.03 will avoid white space from showing between images when scaling back down */
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
 }
