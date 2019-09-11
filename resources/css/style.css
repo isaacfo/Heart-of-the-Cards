@@ -435,3 +435,65 @@ cite img {
     /* align the name with pic */
     vertical-align: middle;
 }
+
+/* ---------------------------------------------- */
+/* SIGN UP*/
+/* ----------------------------------------------- */
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    /* pertains to parent width */
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom:1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    /* gives month think bg color */
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+ 
+.plan-box div:last-child {
+    /* for centering the sign up button */
+    text-align: center;
+    /* take grey border off at the bottom */
+    border: 0;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom:10px;
+    font-weight: 100;
+    color: #e67e22
+}
+/* styles the .month and is based off the size of the plan-price */
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+/* when padding is defined this way, it targets top and bottom and not left and right padding */
+.plan ul li {
+    padding: 5px 0;
+}
