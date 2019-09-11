@@ -24,6 +24,15 @@ html {
      text-rendering: optimizeLegibility;
 }
 
+/* look up clearfix, something to do with clearing floats to adjust correct position of meals-showcase section/area */
+.clearfix {zoom: 1}
+.clearfix::after {
+    content: '.';
+    clear: both ;
+    display:block;
+    height: 0;
+    visibility: hidden;
+}
 
 /* ---------------------------------------------- */
 /* REUSABLE COMPONENTS*/
@@ -99,7 +108,7 @@ h2:after {
     line-height: 145%;
 }
 
-/* display block forces line breaks */
+
 /* -------ICONS------- */
 .icon-big {
     font-size: 350%;
@@ -107,11 +116,42 @@ h2:after {
     color: #e67e22;
     margin-bottom: 10px;
 }
+/* inline block allows you to set width for the icons */
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    /* ways to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/* -----LINKS------ */
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    /* making it trasparent when hovered makes it look like it disappears */
+    border-bottom: 1px solid transparent;
+
+}
 
 
 
 /* -----BUTTONS------ */
-
+/* display block forces line breaks */
 /* inline-block lets you set padding and margin for an inline element */
 /* 10px top and bottom and 30px left and right with this format */
 /* transition is timed color change, does it gradually  */
@@ -269,3 +309,78 @@ header {
     opacity: 1;
     transform: scale(1.03);
 }
+
+/* ---------------------------------------------- */
+/* HOW IT WORKS*/
+/* ----------------------------------------------- */
+
+.section-steps {
+    background-color: #f4f4f4
+}
+
+/* text-align works for inline elements suchs as images not only just text */
+/* this targets the img which is the first child of the steps-box */
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+/* selects last div with class of work steps */
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+/* padding move the number down to the center of circle as well as text-align center */
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px
+}
+
+
+/* ---------------------------------------------- */
+/* CITIES*/
+/* ----------------------------------------------- */
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
