@@ -209,7 +209,8 @@ header {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 
@@ -384,3 +385,53 @@ header {
     margin-bottom: 5px;
 }
 
+/* ---------------------------------------------- */
+/* TESTIMONIALS*/
+/* ----------------------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    /* image stays in place in background even when scrolling */
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    /* allowed because italic style of font was put it header */
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin: 40px;
+}
+
+blockquote::before {
+    /* puts text into the html, in this case quotation mark*/
+    content: "\201C";
+    font-size: 500%;
+    /* to align words with quotation mark */
+    display: block;
+    /* have to make sure when using absolute that parent has relative position */
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    /* pushed picture and name down below sentences */
+    display: block;
+}
+
+
+
+cite img {
+    /* height changes the size of the image */
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* align the name with pic */
+    vertical-align: middle;
+}
