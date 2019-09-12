@@ -156,7 +156,8 @@ a:active {
 /* 10px top and bottom and 30px left and right with this format */
 /* transition is timed color change, does it gradually  */
 .btn:link, 
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -168,7 +169,8 @@ a:active {
 
 /* applies styles to regular state and when clikced/visted already */
 .btn-full:link, 
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -182,7 +184,9 @@ a:active {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active  {
     background-color: #cf6d17
 }
 
@@ -497,3 +501,35 @@ cite img {
 .plan ul li {
     padding: 5px 0;
 }
+
+
+/* ---------------------------------------------- */
+/* FORM*/
+/* ----------------------------------------------- */
+.contact-form {
+    /* brings it to the middle */
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* affect all the types of the selected one  */
+input [type=text],
+input [type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {outline:none}
+
