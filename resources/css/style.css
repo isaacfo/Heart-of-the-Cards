@@ -18,10 +18,11 @@ The browser emphasizes legibility over rendering speed and geometric precision. 
 html {
      background-color: #fff;
      color: #555;
-     font-family: 'Lato', sans-serif;
+     font-family: 'Lato', Arial, sans-serif;
      font-size: 20px;
      font-weight: 300;
      text-rendering: optimizeLegibility;
+     overflow-x: hidden;
 }
 
 /* look up clearfix, something to do with clearing floats to adjust correct position of meals-showcase section/area */
