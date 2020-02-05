@@ -187,7 +187,7 @@ input[type=submit] {
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active  {
-    background-color: rgb(216, 17, 17);
+    background-color: rgb(145, 11, 11);
 }
 
 .btn-full:hover, 
@@ -234,6 +234,12 @@ header {
     margin-top: 20px;
 }
 
+@media (max-width:600px) {
+    .logo {
+        display: none;
+    }
+}
+
 /* not visible in the normal nav state */
 .logo-black {
     display: none;
@@ -269,7 +275,7 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #cf6d17
+    border-bottom: 2px solid rgb(216, 17, 17);
 }
 
 /* if no href, you need to specify pointer */
@@ -396,8 +402,8 @@ header {
 
 /* padding move the number down to the center of circle as well as text-align center */
 .works-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: rgb(216, 17, 17);
+    border: 2px solid rgb(216, 17, 17);
     display: inline-block;
     border-radius: 50%;
     height: 55px;
@@ -526,7 +532,7 @@ cite img {
     font-size: 300%;
     margin-bottom:10px;
     font-weight: 100;
-    color: #e67e22
+    color: rgb(216, 17, 17)
 }
 /* styles the .month and is based off the size of the plan-price */
 .plan-price span {
