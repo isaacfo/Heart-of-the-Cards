@@ -89,7 +89,7 @@ h3 {
 h2:after {
     display: block;
     height: 2px;
-    background-color: #cf6d17;
+    background-color: rgb(216, 17, 17);
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -113,7 +113,7 @@ h2:after {
 .icon-big {
     font-size: 350%;
     display: block;
-    color: #e67e22;
+    color: rgb(216, 17, 17);
     margin-bottom: 10px;
 }
 /* inline block allows you to set width for the icons */
@@ -121,7 +121,7 @@ h2:after {
     display: inline-block;
     width: 30px;
     text-align: center;
-    color: #e67e22;
+    color: rgb(216, 17, 17);
     font-size: 120%;
     margin-right: 10px;
     /* ways to align text and icons */
@@ -133,10 +133,10 @@ h2:after {
 /* -----LINKS------ */
 a:link,
 a:visited {
-    color: #e67e22;
+    color: rgb(216, 17, 17);
     text-decoration: none;
     padding: 1px;
-    border-bottom: 1px solid #e67e22;
+    border-bottom: 1px solid rgb(216, 17, 17);
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -171,33 +171,33 @@ input[type=submit] {
 .btn-full:link, 
 .btn-full:visited,
 input[type=submit] {
-    background-color: #e67e22;
-    border: 1px solid #e67e22;
+    background-color: rgb(216, 17, 17);
+    border: 1px solid rgb(216, 17, 17);
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #e67e22;
-    color: #e67e22;
+    border: 1px solid rgb(216, 17, 17);
+    color: white;
 }
 
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
 input[type=submit]:active  {
-    background-color: #cf6d17
+    background-color: rgb(216, 17, 17);
 }
 
 .btn-full:hover, 
 .btn-full:active {
-    border: 1px solid #e67e22;
+    border: 1px solid rgb(216, 17, 17);
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #e67e22;
+    border: 1px solid rgb(216, 17, 17);
     color: #fff
 }
 
@@ -210,7 +210,7 @@ input[type=submit]:active  {
 /* vh means 100% of the viewport */
 /* linear gradient to make image have like a drak transparent color on top of it */
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/hero.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/yugi1.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
