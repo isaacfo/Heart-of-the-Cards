@@ -211,7 +211,7 @@ input[type=submit]:active  {
 /* linear gradient to make image have like a drark transparent color on top of it */
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/yugi1.jpg);
-    background-size: cover;
+    /* background-size: cover; */
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
